@@ -1,0 +1,533 @@
+/*generat */
+html {
+	box-sizing: border-box;
+/*	width + padding + border = zapocitav sa do sirky
+	margin = sa nezapocitava do sirky */
+}
+
+*, *:before, *:after {
+	box-sizing: inherit; /* potomkovia zdedia akukolvej hodnotu, ktoru ma ich rodic */
+}
+
+body {
+	font-family: "SerifaBT-Light";
+    color: #535b60;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1600px;
+    background: #fff;
+    text-align: center;
+
+}
+
+.group:before,
+.group:after {
+    content: " ";
+    display: table;
+}
+
+
+
+.group:after {
+    clear: both;
+}
+
+.group {
+	text-align: center;
+	max-width: 1020px;
+	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+}
+
+nav .hidden p {
+	background: #283136;
+	padding: 2.19em;
+	max-height: 100%;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-transform: uppercase;
+	margin: 0;
+	opacity: .9;
+	cursor: pointer;
+	display: none;
+}
+nav .hidden p:hover {
+	opacity: 1;
+}
+
+.content {
+	max-width: 950px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+nav .hidden img {
+	position: relative;
+	top: 15px;
+	float: left;
+}
+
+a {
+	text-decoration: none;
+}
+
+nav {
+	background: #121B21;
+	padding-top: .4em;
+}
+
+nav ul {
+	line-height: 35px;
+	vertical-align: top;
+	margin: -18px;
+	margin-top: .6em;
+	text-transform: uppercase;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav li a {
+color: #c4cbcf;
+margin: .8em;
+margin-left: .4em;
+}
+
+nav span {
+	color: #fff;
+	border: .5px solid #fff;
+	padding: 1em;
+}
+
+nav li.prijimame a {
+	padding-right: 100px;
+	background-image: url('https://www.tilde.io/images/common/we-are-hiring-illustration-21a432db.png');
+	background-position: top right;
+ 	background-size: 96px 146px;
+ 	background-repeat: no-repeat;
+ 	display: inline-block;
+ 	height: 72px;
+}
+
+.hidden .show {
+	cursor: pointer;
+}
+
+nav a:hover {
+	color: #fff;
+}
+
+nav li.prijimame:hover {
+	transform: translateY(-5px);
+}
+
+nav li.prijimame:hover span {
+	background: #303438;
+}
+
+
+nav li.prijimame a span::before {
+	border-color: rgba(136,141,144,0);
+    border-left-color: red;
+    border-width: 8px;
+    margin-top: -8px;
+}
+
+nav li.prijimame a span::after {
+	border-color: rgba(255,255,255,0);
+    border-left-color: lightgreen;
+    border-width: 7px;
+    margin-top: -7px;
+}
+
+header {
+	background-image: url('https://www.tilde.io/images/home/code-background-eef602f0.png');
+	background-repeat: repeat;
+	background-position: center center;
+    background-size: 100%;
+	background: #00afc4;
+
+}
+
+header #foto{
+	position: relative;
+    display: block;
+    width: 26.5625em; /* 425/16 */
+    height: 18.375em; /* 294/16 */
+    padding: 0;
+    margin: -8em auto -0.0625em; /* 128/16 */ /* 1/16 */
+}
+
+header h2 {
+	padding-top: 30px;
+	color: #0a343c;
+	text-transform: uppercase;
+}
+
+header h1 {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 7em;
+	font-weight: bold;
+	letter-spacing: -0.07em;
+    line-height: 100px;
+    margin-top: .4em;
+}
+
+header .call_to_action {
+	position: absolute;
+	transform: translateY(-30px);
+	left: 0;
+	right: 0;
+	z-index: 9999;
+}
+
+header .call_to_action div {
+	position: relative;
+	width: 241px;
+	height: 60px;
+	margin: 0 auto;
+	padding: 0 28px;
+}
+
+header .call_to_action div a.arrow {
+	background-image: url('https://www.tilde.io/images/common/yellow-arrow-cd660a41.png');
+	background-repeat: no-repeat;
+	color: #121b21;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: block;
+	line-height: 62px;
+	text-indent: -7px;
+	cursor: pointer;
+	font-family: "FuturaBT-Bold", Impact, sans-serif;
+    word-spacing: .2em;
+    letter-spacing: .1em;
+	font-size: 1em;
+}
+
+/* ANIMATION */
+
+.slide-right .arrow:hover {
+	-webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
+/*
+ * ----------------------------------------
+ * animation slide-right
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  50% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+  	-webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+
+}
+
+/*END  ANIMATION */
+
+.subheader {
+	padding-top: 2.4em;
+	padding-bottom: 2.4em;
+	background: #EDF3F3 url('https://www.tilde.io/images/common/lattice-5e08b610.gif') bottom repeat-x;
+}
+
+.subheader .border {
+	position: relative;
+	bottom: 45px;
+	width: 100%;
+	height: 7px;
+	background-image: url('https://www.tilde.io/images/common/blue-grey-triangle-border-2ad58b40.png');
+	background-size: 14px 7px;
+}
+
+.subheader .content p {
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 1.3em;
+}
+
+.subheader .content h2 {
+	text-transform: uppercase;
+	font-size: 1em;
+	color: #535b60;
+}
+
+.subheader .content ul li {
+	display: inline-block;
+	margin-right: 2.5em;
+}
+
+.subheader .content ul li:last-child {
+	margin-right: 0;
+}
+
+main h2 {
+	margin-top: 3em;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1em;
+	color: #fff;
+
+}
+
+main h2 span {
+	background: #000;
+	padding: .5em;
+}
+
+
+main div.obrazok {
+	margin-top: 1em;
+	max-width: 33%;
+	float: left;
+	margin-bottom: 2.5em;
+}
+
+main div.obrazok img {
+	max-width: 70%;
+	height: auto;
+}
+
+main div.obrazok img:last-child {
+	margin: 0;
+}
+
+.rel {
+	position: relative;
+	bottom: 20px;
+}
+
+main div.obrazok p {
+	text-align: center;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    margin-bottom: 2.5em;
+}
+
+img {
+	max-width: 100%;
+}
+
+main div.obrazok:first-child a {
+	margin-top: 1em;
+}
+
+
+
+main a {
+	background: red;
+	padding: 1em;
+	border: 1px solid red;
+	border-radius: .5em;
+	transition: .3s all;
+	color: #fff;
+}
+
+main a:hover {
+	background: #fff;
+	color: red;
+}
+
+.borderr {
+	border: 1px solid #333;
+	position: relative;
+	top: 455px;
+}
+
+main .inquire {
+	margin-top: 35em;
+	margin-bottom: 3em;
+}
+
+main .inquire .headline {
+	font-size: 2.625em; /* 42/16 */
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #000;
+}
+
+main .inquire a {
+	position: relative;
+	bottom: 25px;
+	padding: .6em;
+	margin-left: 1em;
+}
+
+footer {
+	padding-top: 2.4em;
+	padding-bottom: 1.5em;
+	background: #EDF3F3 url('https://www.tilde.io/images/common/lattice-5e08b610.gif') top repeat-x;
+}
+
+footer li {
+	display: inline-block;
+	margin-right: 1.5em;
+	margin-bottom: 2.5em;
+}
+
+footer a {
+	color: #535b60;
+}
+
+footer li img {
+	position: relative;
+	top: 8px;
+}
+
+footer p {
+	color: rgba(25,33,45,0.5);
+	font-size: .9em;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 960px) {
+
+	main div.obrazok {
+		float: none;
+		display: block;
+		max-width: 100%;
+		text-align: left;
+		border-top: 1px solid #333;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+	main div.obrazok img {
+		max-width: 340px;
+		float: left;
+		margin-bottom: 1em;
+		margin-right: 1em;
+	}
+
+	main div.obrazok p {
+		margin-right: 1.5em;
+		text-align: justify;
+	}
+	main div.rel p {
+		margin-bottom: 1.5em;
+	}
+
+	main .borderr {
+		top: 100px;
+	}
+
+	main .inquire {
+		margin-top: 10em;
+	}
+
+
+}
+
+
+@media (max-width: 920px) {
+	nav .hidden p {
+		display: block;
+	}
+
+	nav .hidden ul {
+	display: none;
+	}
+
+	nav ul {
+		height: auto;
+		padding-left: 0;
+	}
+
+	nav .hidden ul li {
+		width: 100%;
+		float: none;
+		background: #121B21;
+		border-top: 1px solid #fff;
+		padding: 1em
+	}
+
+	nav .hidden img {
+		float: left;
+		margin-left: 1em;
+		padding-bottom: 3.1em;
+	}
+
+	nav li.prijimame:hover {
+	transform: translateY(0px);
+	}
+
+	nav .hidden ul li:last-child {
+		padding-bottom: 0;
+	}
+
+
+}
+
+@media (max-width: 840px) {
+	header h1 {
+		font-size: 6em;
+	}
+}
+
+@media (max-width: 765px)  {
+	main div.obrazok {
+		text-align: center;
+		display: block;
+		height: auto;
+	}
+	main div.obrazok img {
+		margin: 1em;
+		float: none;
+	}
+
+	main div.obrazok p {
+		max-width: 340px;
+		margin: 0 auto;
+		margin-bottom: 2em;
+	}
+
+}
+
+@media (max-width: 750px) {
+	main .inquire .headline  {
+		display: block;
+	}
+
+	main .inquire a {
+		top: 25px;
+	}
+}
+
+@media (max-width: 685px) {
+
+
+	main .inquire a {
+		right: 13px;
+	}
+}
+
+@media (max-width: 700px) {
+	header h1 {
+		font-size: 5em;
+	}
+}

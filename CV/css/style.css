@@ -1,0 +1,1001 @@
+html, body {
+    background: #EAE5E5;
+    margin: 0 auto;
+    text-align: center;
+    color: #8B8B8B;
+}
+
+.container {
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+header a {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #8b8b8b8b;
+    transition: .5s all;
+    cursor: pointer;
+}
+
+.hamburger {
+   display: none;
+   cursor: pointer;
+}
+
+.hamburger:before {
+    content: '☰';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul {
+    padding-left: 0;
+}
+
+dd {
+    margin-left: 0;
+}
+
+header {
+    min-height: 154px;
+}
+
+
+nav li.selected {
+    color: #4D4D4D;
+    font-size: 1.6em;
+    padding-left: 0;
+}
+
+nav h1 {
+    margin-bottom: 0;
+}
+
+nav {
+    display: flex;
+}
+
+li {
+    list-style-type: circle;
+}
+
+header ul li,
+footer ul li,
+#home ul li,
+#projects .hide li {
+    display: inline-block;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.findMeCont {
+    display: inline-block;
+}
+
+.content {
+    float: left;
+    text-align: left;
+}
+
+.content h1 {
+    font-size: 3em;
+    margin-top: 1em;
+    text-transform: uppercase;
+    margin-bottom: 2.7em;
+}
+
+
+
+/*HOME PAGE*/
+#home {
+    margin-top: 75px;
+    color: #4D4D4D;
+}
+
+#home img {
+    float: left;
+    width: 180px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#home .content {
+    float: right;
+    max-width: 440px;
+}
+
+#home h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#home ul li {
+    margin: 60px 0 100px 0;
+    padding: 0;
+}
+
+#home ul li a {
+    padding: 50px 30px 50px 30px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+#home ul li:nth-child(1) a {
+    border: 1px solid #E83556;
+    background: #E83556;
+}
+#home ul li:nth-child(2) a{
+    border: 1px solid #61D0D4;
+    background: #61D0D4;
+}
+
+#home ul li:nth-child(3) a {
+    border: 1px solid #D1C926;
+    background: #D1C926;
+}
+
+#home ul li:nth-child(1) a:hover,
+#home ul li:nth-child(1) a:hover:focus {
+    background: #EAE5E5;
+    color: #E83556;
+}
+#home ul li:nth-child(2) a:hover:focus,
+#home ul li:nth-child(2) a:hover:hover {
+    color: #61D0D4;
+    background:  #EAE5E5;
+}
+
+#home ul li:nth-child(3) a:hover:focus,
+#home ul li:nth-child(3) a:hover:hover {
+    color: #D1C926;
+    background:  #EAE5E5;
+}
+
+/*RESUME HTML*/
+main#resume {
+    padding-bottom: 1550px;
+}
+
+#resume h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+#resume .container {
+    max-width: 800px;
+}
+
+#resume p { text-align: justify; }
+
+#resume .info {
+    border-top: 1px solid #333;
+    margin-top: 80px;
+}
+#resume .info h3 {
+    background: #E83556;
+    color: #fff;
+    padding: 55px 0 55px 0;
+    margin-right: 15px;
+    border-radius: 50%;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+#resume .info .padding {
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+#resume .info {
+    max-width: 600px;
+}
+
+#resume .info .text {
+   margin-left: 170px;
+   margin-top: 50px;
+}
+#resume .text h2 {
+    margin-bottom: 0;
+}
+
+#resume .skills {
+    width: 170px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+#resume .skills i {
+    background: #61D3D8;
+    color: #fff;
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#resume .skills .margin {
+    margin-top: 182px;
+}
+#resume .skills .skcontent {
+    padding: 20px 0px 12px 14px;
+    border-top: 1px solid #333;
+}
+
+footer#resume {
+    margin-top: 100px;
+}
+
+#resume .content p a:hover {
+    text-decoration: underline;
+}
+
+/* PROJECTS */
+#projects ol {
+    text-align: left;
+}
+
+main#projects {
+    padding-bottom: 50px;
+}
+
+#projects .container {
+    width: 188px;
+}
+
+.gallery {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1px;
+}
+
+.gallery img {
+     width: 260px;
+     height: 190px;
+ }
+
+.gallery-set {
+    margin-bottom: 30px;
+}
+
+#projects .interestShow {
+    margin-bottom: 20px;;
+}
+
+#projects .selectedLink {
+    text-decoration: underline;
+}
+
+#projects #btn{
+    margin-bottom: 25px;
+}
+
+#overlay {
+	background: rgba(0, 0, 0, .7);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 20;
+	text-align: center;
+}
+
+#overlay img {
+	margin-top: 7%;
+	border: 5px solid #fff;
+	border-radius: 5px;
+
+	max-width: 30%;
+	height: auto;
+}
+
+#projects .hide p {
+    border: 1px dotted #333;
+    padding: .5em;
+    width: 30%;
+    margin: 15px auto;
+}
+
+    /*TIC-TAC-TOE*/
+
+:root {
+    --cell-size: 100px;
+    --mark-size: calc(var(--cell-size) *.9);
+}
+
+#projects .TicBoard {
+    width: 400px;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+}
+
+#projects .TicBoard .cell.cell:not(.x):not(.circle):hover::before,
+#projects .TicBoard .cell.cell:not(.x):not(.circle):hover::after,
+#projects .TicBoard.circle .cell:not(.x):not(.circle):hover::before,
+#projects .TicBoard.circle .cell:not(.x):not(.circle):hover::after {
+    background-color: lightgrey;
+}
+
+.cell.x::before,
+.cell.x::after,
+.cell.circle::before,
+.cell.circle::before {
+    background: #000; 
+}
+
+
+
+.cell {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3) {
+    border-top: none;
+}
+
+.cell:nth-child(3n +1) {
+    border-left: none;
+} 
+
+.cell:nth-child(3n +3) {
+    border-right: none;
+}
+
+.cell:last-child,
+.cell:nth-child(7),
+.cell:nth-child(8) {
+    border-bottom: none;
+}
+
+.cell.x,
+.cell.x {
+    cursor: not-allowed;
+}
+
+.cell.x::before,
+.cell.x::after,
+#projects .TicBoard.x .cell:not(.x):not(.circle):hover::before,
+#projects .TicBoard.x .cell:not(.x):not(.circle):hover::after {
+    content: '';
+    position: absolute;
+    width: calc(var(--mark-size)*.15);
+    height: var(--mark-size );
+}
+
+.cell.x::before,
+#projects .TicBoard.x .cell:not(.x):not(.circle):hover::before {
+    transform: rotate(45deg);
+}
+
+.cell.x:after,
+#projects .TicBoard.x .cell:not(.x):not(.circle):hover::after {
+    transform:rotate(-45deg);
+}
+
+.cell.circle::before,
+.cell.circle::after,
+#projects .TicBoard.circle .cell:not(.x):not(.circle):hover::before,
+#projects .TicBoard.circle .cell:not(.x):not(.circle):hover::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+.cell.circle::before,
+#projects .TicBoard.circle .cell:not(.x):not(.circle):hover::before {
+    width: var(--mark-size);
+    height: var(--mark-size);
+}
+
+.cell.circle::after,
+#projects .TicBoard.circle .cell:not(.x):not(.circle):hover::after {
+    width: calc(var(--mark-size) * .7);
+    height: calc(var(--mark-size) * .7);
+    background: #fff;
+}
+
+
+    /*SNAKE*/
+#Snake-area {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(36,36,36);
+}
+
+#Snake-area, 
+#Snake-area td {
+    border: 1px solid rgb(187,187,187);
+    border-collapse: collapse;
+}
+
+.draw-player {
+    background-color: #fff;
+    
+}
+
+.draw-point {
+    background-color: rgb(254, 62, 62);
+    z-index: -1;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    
+}
+.flex p {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+/* 2048 */
+#projects .score-container,
+#projects .result {
+    text-align: center;
+    width: 406px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#projects .result {
+    color: #E83556;
+}
+
+#projects .game2048 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 400px;
+    color: #fff;
+}
+
+#projects .game2048 div {
+    background: #000 ;
+    width: 100px;
+    height: 100px;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #fff;
+}
+
+/* END OF 2048 */
+
+/* CONTACT HTML */
+.links {
+    margin-bottom: 2em;
+}
+
+.content .links a {
+    text-align: center;
+    font-size: 1em;
+    margin-right: 10px;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+.content .links .fab {
+    margin-left: 5px;
+}
+
+.content .links a:last-child .fab {
+    margin-left: 0;
+    padding: 5px;
+}
+
+.content .links a:hover,
+.content .links a:focus {
+    color: #000;
+    background: #EAE5E5;
+}
+
+.content p strong {
+    color: #000;
+}
+
+.content p a {
+    color: #8B8B8B;
+}
+
+aside {
+    float: right;
+}
+
+::placeholder,
+input,
+textarea {
+    color: #fff;
+    resize: none;
+}
+
+#contact input:not([type="checkbox"]),
+#contact input:not([type="submit"]),
+#contact textarea {
+    display: block;
+    margin: 0px 0px 3px 0;
+    width: 160%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #E1E5E5;
+    background: #E83556;
+}
+
+#contact form input[type='submit']
+{
+    text-align: right;
+    border: none;
+    width: 160%;
+    padding: 1.4em;
+    background: #EAE5E5;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+#contact form input[type=submit]:hover,
+#contact form input[type=submit]:focus {
+    color: #61D3D8;
+}
+
+/* REVIEWS */
+
+#reviews .even {
+    background-color: #e4dbdb;
+}
+
+main#reviews {
+    padding-bottom: 50px;
+}
+
+#reviews .form-group {
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    height: 200px;
+    position: relative;
+}
+
+#reviews .counter {
+    position: absolute;
+    right: 21px;
+    bottom: 22px;
+}
+
+#reviews textarea {
+    width: 500px;
+    height: 200px;
+    color: #000;
+    margin-bottom: 50px;
+}
+
+#reviews textarea:focus {
+    outline: 1px solid #eee;
+}
+
+
+
+.svg {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -26px;
+    bottom: -28px;
+}
+svg circle {
+    fill: none;
+    stroke-width: 1;
+}
+
+.underlay {
+    stroke: #ccc;
+}
+
+.progress {
+    color: #1da1f2;
+    stroke-width: 3;
+    transition: .2s stroke-width ease-in-out;
+}
+
+.tragedy {
+    stroke-width: 5;
+    animation: blink .4s ease-out;
+}
+
+@keyframes blink {
+    0% {stroke-width: 5; }
+    10% {stroke-width: 10; }
+    100% {stroke-width: 5;}
+}
+
+.safe{
+    color: #1da1f2;
+} 
+
+.warn {
+    color:#ffad1f;
+} 
+
+.danger {
+    color: #e0245e;
+} 
+
+#reviews .delete {
+    border: none;
+
+}
+
+#reviews .article-list .border {
+    border-top: 1px solid #ccc;
+}
+
+#reviews .article-list article {
+    margin: 15px auto;
+    padding: 25px;
+
+}
+
+#reviews .article-list {
+    width: 420px;
+    margin: 15px auto;
+    
+}
+
+#reviews .article-list article time {
+    margin-top: 10px;
+}
+
+#reviews .article-list p {
+    text-align: justify;
+}
+
+
+#reviews form input[type='submit'].btn {
+    border: none;
+    border: 1px solid red;
+    background-color: red;
+    padding: 12px;
+    transition: .5s all;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+#reviews form input[type='submit'].btn:hover,
+#reviews form input[type='submit'].btn:focus,
+.delete {
+    color: red;
+    background-color: #EAE5E5;
+}
+
+#item-list li {
+    display: block;
+    border-top: 1px solid #d0c7c7;
+    padding: 25px 0;
+    max-height: 200px;
+    text-align: center;
+}
+
+
+
+/* FOOTER */
+main {
+    padding-bottom: 725px
+}
+
+
+footer {
+    background: #E83556;
+    color: #fff;
+    padding: 5px;
+  
+}
+
+footer ul li i {
+   display: block;
+   float: left;
+   padding: 10px;
+   border-radius: 50%;
+   margin-right: 10px;
+   background: #61D0D4;
+   color: #E83556;
+}
+
+footer li .fa {
+    font-size: 2.5em;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer .links {
+    margin-bottom: 0;
+}
+
+.footcontent {
+    display: block;
+    float: right;
+    margin-top: 10px;
+}
+
+footer .links a .fab {
+    font-size: 1.3em;
+    margin-top: 6px;
+    margin-right: 4px;
+    padding: 2px;
+    color: #fff;
+    background: #E83556;
+    border-radius: 50%;
+}
+
+footer a:hover,
+footer a:focus,
+footer .links a i:hover,
+footer .links a i:focus {
+    text-decoration: underline;
+}
+
+footer .links li:last-child::before {
+    content: '©';
+    font-size: 3em;
+}
+.fal:before {
+    content: "©";
+    font-size: 2.2em;
+}
+
+/*
+* KEYFRAMES
+*/
+
+
+.round-Hamburger {
+	animation: spin 1s;
+}
+
+.pulse {
+	animation: pulse 1s infinite linear;
+}
+
+@keyframes spin {
+	100% { transform: rotate(90deg); }
+}
+
+
+/*
+* MEDIA QUERIES
+*
+*/
+
+
+@media screen and (max-width: 1090px ) {
+
+form button,
+input:not([type="checkbox"]), 
+input:not([type='submit']).btn, textarea {
+    width: 100%;
+}
+#reviews form input[type='submit'].btn { 
+    width: 100px;
+}
+
+}
+
+@media screen and (max-width: 950px) {
+    footer ul li:last-child {
+        margin-right: 395px;
+        margin-top: 13px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    form button,
+    input:not([type="checkbox"]),
+    input:not([type='submit']).btn, textarea {
+        width: 90%;
+    }
+
+    #contact aside, 
+    #contact .content {
+        float: none;
+        text-align: center;
+        margin-left: 15px;
+    }
+
+    #contact .contentLinks {
+        margin: 0 auto;
+        text-align: left;
+        width: 267px;
+    }
+
+    main#contact {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 830px) {
+
+    /* RESUME */
+    #resume .content {
+        margin-bottom: 60px;
+    }
+
+    #resume .content .info {
+        margin-left: 5px;
+        margin-right: 15px;
+    }
+
+    #resume .info .content  {
+        margin-bottom: 0;
+    }
+
+    #resume .container {
+        max-width: 600px;
+    }
+
+    aside {
+        float: none;
+    }
+
+    #resume h1 {
+        text-align: center;
+    }
+
+    #resume .skills {
+        width: 600px;
+        border: none;
+        text-align: center;
+    }
+
+    #resume .skills .skcontent {
+        margin-left: 20px;
+    }
+
+    #resume .skills .skcontent ul li {
+        list-style: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    footer {
+        margin-top: 60px;
+    }
+    footer ul li {
+        width: 43%;
+        display: flex;
+        margin: 15px auto;
+    }
+
+    footer ul li:last-child {
+        margin: 15px auto;
+    }
+
+
+}
+
+@media screen and (max-width: 660px) {
+    header {
+        min-height: 30px;
+    }
+
+    .findMe {
+      margin-top: 25px;
+      border-top: 1px solid #333;
+    }
+
+    .nav ul li {
+        text-align: center;
+    }
+
+    .nav {
+        float: none;
+        margin: 0 9em;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    main#home {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #home img,
+    #home .content {
+        float: none;
+    }
+
+    #home .content {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .findMe {
+      display: block;
+      text-align: center;
+      width: 100px;
+      }
+
+      .findMeCont {
+          margin: 0 auto;
+          text-align: center;
+          width: 127px;
+      }
+
+    /*RESUME*/
+
+    main#resume {
+        padding-bottom: 0;
+    }
+
+    #projects .flex {
+        width: 200px;
+    }
+
+    #projects dd {
+        margin-left: -96px;
+    }
+
+    
+}
+
+@media screen and (max-width: 580px) {
+
+    footer ul li {
+        width: 100%;
+        display: flex;
+        margin: 15px 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    footer ul li:last-child {
+        margin: 15px 0;
+    }
+
+    /*RESUME*/
+
+    #resume .skills {
+        margin-left: 50px;
+        width: 369px;
+    }
+
+    #reviews textarea {
+        width: 400px;
+    }
+
+    .svg {
+        right: 22px;
+    }
+
+ 
+
+
+}
